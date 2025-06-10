@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recognition Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+</head>
+<body>
+    <h1>📊 Recognition Dashboard</h1>
+
+    <p>Total Recognitions: <strong id="total-count">Loading...</strong></p>
+
+    <canvas id="barChart" width="600" height="300"></canvas>
+
+    <h2>🕒 Recent Recognitions</h2>
+    <table>
+        <thead>
+            <tr><th>Timestamp</th><th>Name</th></tr>
+        </thead>
+        <tbody id="recent-logs">
+            <!-- Filled by JS -->
+        </tbody>
+    </table>
+
+    <a href="/">⬅️ Back to Home</a>
+</body>
+</html>
