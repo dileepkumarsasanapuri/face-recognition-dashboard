@@ -1,0 +1,9 @@
+# .gitignore
+__pycache__/
+*.pyc
+*.pkl
+venv/
+*.DS_Store
+*.db
+known_faces/*
+recognition_log.csv
